@@ -32,7 +32,7 @@ max_current_error = 1
 # Helper functions
 def do_rpm_ramp(motor, start_rpm, end_rpm):
     rpm = start_rpm
-    nb_steps = math.ceil((end_rpm-start_rpm)/max_rpm_ramp_step)
+    nb_steps = math.ceil(abs(end_rpm-start_rpm)/max_rpm_ramp_step)
     for _ in range(nb_steps):
         rpm = rpm + (end_rpm-start_rpm)/nb_steps
         motor.set_rpm(int(rpm))
@@ -40,7 +40,7 @@ def do_rpm_ramp(motor, start_rpm, end_rpm):
 
 def do_current_ramp(motor, start_current, end_current):
     current = start_current
-    nb_steps = math.ceil((end_current-start_current)/max_current_ramp_step)
+    nb_steps = math.ceil(abs(end_current-start_current)/max_current_ramp_step)
     for _ in range(nb_steps):
         current = current + (end_current-start_current)/nb_steps
         motor.set_current(current*1000) # Set current in mA
