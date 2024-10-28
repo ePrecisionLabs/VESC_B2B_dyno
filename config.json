@@ -1,0 +1,28 @@
+{
+    "motor_dut_port": "COM5",
+    "motor_absorber_port": "COM4",
+    "rpm_array": [
+        100,
+        200,
+        300,
+        400,
+        700,
+        1000,
+        2000,
+        3000
+    ],
+    "current_array": [
+        1,
+        2,
+        5,
+        10,
+        15,
+        20
+    ],
+    "test_point_nb_captures": 10,
+    "test_point_time_btwn_measurements": 0.2,
+    "test_point_settling_time_s": 0.5,
+    "ramp_settling_time_s": 0.15,
+    "max_rpm_ramp_step": 250,
+    "max_current_ramp_step": 5
+}

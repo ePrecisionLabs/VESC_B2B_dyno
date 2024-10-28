@@ -1,3 +1,3 @@
 .venv/
 .vscode/
-dut_log.txt
+dut_log*.txt
