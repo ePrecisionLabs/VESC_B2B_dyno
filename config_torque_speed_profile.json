@@ -22,5 +22,6 @@
     "time_btwn_measurements": 0.2,
     "ramp_settling_time_s": 0.2,
     "max_rpm_ramp_step": 500,
-    "max_current_ramp_step": 5
+    "max_current_ramp_step": 5,
+    "number_loops": 2
 }
