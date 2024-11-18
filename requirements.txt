@@ -1,1 +1,2 @@
 git+https://github.com/lukedempsey/PyVESC.git
+pyserial==3.5
